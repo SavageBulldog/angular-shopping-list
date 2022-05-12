@@ -1,22 +1,22 @@
 <!-- sends events from form and item to api -->
 <app-shop-form (onItemAddEvent)="addItem($event)"></app-shop-form>
-<div>
-  <button class="filter-finished" (click)="onFilterDone('all')">All</button>
-  <button class="filter-finished" (click)="onFilterDone('finished')">
+<div class="btn-row">
+  <button class="button-0" (click)="onFilterDone('all')">All</button>
+  <button class="button-0" (click)="onFilterDone('finished')">
     Finished
   </button>
-  <button class="filter-unfinished" (click)="onFilterDone('unfinished')">
+  <button class="button-0" (click)="onFilterDone('unfinished')">
     Unfinished
   </button>
 </div>
-<div>
+<div class="btn-row">
   <button class="button-0" (click)="sortItemList('id')">ID</button>
   <button class="button-0" (click)="sortItemList('title')">Title</button>
   <button class="button-0" (click)="sortItemList('unit')">Unit</button>
 </div>
 <h2>Items 👇</h2>
 <br />
-<ng-container *ngFor="let item of shopItems">
+<ng-container *ngFor="let item of shopItems" class="listItemContainer">
   <app-shop-item
     [shopItem]="item"
     (onItemDeleteEvent)="removeItem($event)"

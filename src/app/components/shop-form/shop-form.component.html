@@ -1,61 +1,71 @@
 <h2>Add Item</h2>
-<div>
+<div class="formContainer">
   <!-- input fields 🥶👉🥛-->
   <form>
-    <label for="inputTitle">Item Title </label>
-    <input
-      required
-      type="text"
-      name="inputTitle"
-      id="inputTitle"
-      [(ngModel)]="model.title"
-    /><br />
+    <div class="inputContainer">
+      <label for="inputTitle">Item Title </label>
+      <input
+        required
+        type="text"
+        name="inputTitle"
+        id="inputTitle"
+        [(ngModel)]="model.title"
+      />
+    </div>
 
-    <label for="inputAmount">Amount </label>
-    <input
-      required
-      type="number"
-      min="0"
-      name="inputAmount"
-      id="inputAmount"
-      [(ngModel)]="model.amount"
-    /><br />
+    <div class="inputContainer">
+      <label for="inputAmount">Amount </label>
+      <input
+        required
+        type="number"
+        min="0"
+        name="inputAmount"
+        id="inputAmount"
+        [(ngModel)]="model.amount"
+      />
+    </div>
 
-    <label for="inputUnit">Unit </label>
-    <select
-      required
-      type="text"
-      name="inputUnit"
-      id="inputUnit"
-      [(ngModel)]="model.unit"
-    >
-      <option value="pcs">pieces</option>
-      <option value="kg">kg</option>
-      <option value="grams">grams</option>
-      <option value="liters">liters</option>
-      <option value="cups">cups</option></select
-    ><br />
+    <div class="inputContainer">
+      <label for="inputUnit">Unit </label>
+      <select
+        required
+        type="text"
+        name="inputUnit"
+        id="inputUnit"
+        [(ngModel)]="model.unit"
+      >
+        <option value="pcs">pieces</option>
+        <option value="kg">kg</option>
+        <option value="grams">grams</option>
+        <option value="liters">liters</option>
+        <option value="cups">cups</option>
+      </select>
+    </div>
 
-    <label for="inputCheckBox">Finished </label>
-    <input
-      class="check"
-      type="checkbox"
-      name="inputCheckBox"
-      value="true"
-      [(ngModel)]="model.done"
-    />
-    <br />
-    <label for="inputDescription">Description </label>
-    <textarea
-      name="inputDescription"
-      id="inputDescription"
-      cols="30"
-      rows="1"
-      [(ngModel)]="model.description"
-    >
-    </textarea>
-    <br />
-    <button class="save" (click)="onSave()">Save</button>
+    <div class="inputContainer">
+      <label for="inputCheckBox">Finished </label>
+      <input
+        class="check"
+        type="checkbox"
+        name="inputCheckBox"
+        value="true"
+        [(ngModel)]="model.done"
+      />
+    </div>
+
+    <div class="inputContainer">
+      <label for="inputDescription">Description </label>
+      <textarea
+        name="inputDescription"
+        id="inputDescription"
+        cols="30"
+        rows="1"
+        [(ngModel)]="model.description"
+      >
+      </textarea>
+    </div>
+
+    <button class="btn-save" (click)="onSave()">Save</button>
   </form>
 </div>
 <br />

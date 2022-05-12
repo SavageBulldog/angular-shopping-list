@@ -1,23 +1,22 @@
 /* ---------------------------------------------------- */
 h2 {
   color: #969696;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
   margin: 0;
   letter-spacing: 0.5px;
 }
-.BasicUI {
-  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
-  letter-spacing: 0.5px;
-  color: #8b929a;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 600;
+.btn-row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 .button-0 {
   border: none;
-  padding: 2px;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 2px;
   display: inline-block;
   cursor: pointer;
   color: #d2e885 !important;
@@ -27,27 +26,12 @@ h2 {
   background: -webkit-linear-gradient(top, #a4d007 5%, #536904 95%);
   background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
 }
-.filter-finished {
-  border: none;
-  padding: 2px;
-  display: inline-block;
-  cursor: pointer;
-  color: #d2e885 !important;
-  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
-
+.button-0:hover {
   background: #a4d007;
-  background: -webkit-linear-gradient(top, #a4d007 5%, #536904 95%);
-  background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+  background: -webkit-linear-gradient(top, #536904 5%, #a4d007 95%);
+  background: linear-gradient(to bottom, #536904 5%, #a4d007 95%);
 }
-.filter-unfinished {
-  border: none;
-  padding: 2px;
-  display: inline-block;
-  cursor: pointer;
-  color: #d2e885 !important;
-  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
-
-  background: #a4d007;
-  background: -webkit-linear-gradient(top, #a4d007 5%, #536904 95%);
-  background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+.listItemContainer {
+  display: flex;
+  flex-direction: row;
 }

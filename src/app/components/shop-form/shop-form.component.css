@@ -1,13 +1,19 @@
-div {
-  background-color: rgb(79, 149, 255);
-  box-shadow: 3px 7px 20px #ff75ca;
-}
-
-div {
+h2 {
+  color: #969696;
+  font-size: 2em;
   text-align: center;
-  border-style: double;
-  border-width: 12px;
-  border-color: rgb(255, 255, 255);
+  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+div.formContainer {
+  background: radial-gradient(
+    farthest-corner at 40px 40px,
+    #1b2838 10%,
+    #2a475e 90%
+  );
+  text-align: center;
   border-radius: 20px;
   padding-bottom: 2%;
   padding-top: 2%;
@@ -16,35 +22,39 @@ div {
   margin-bottom: 2%;
 }
 
-select {
-  width: 35%;
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-bottom: 2%;
-  font-family: 'Exo';
-  font-size: 1em;
-  letter-spacing: 0.03em;
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
-input {
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-bottom: 2%;
-  font-family: 'Exo';
-  font-size: 1em;
-  letter-spacing: 0.03em;
-}
-
-label {
+.inputContainer label {
+  flex: 1;
+  text-align: left;
   align-items: left;
-  color: white;
-  font-family: 'Exo';
+  color: #c5ced8;
+  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
-  transform: skew(-15deg);
   letter-spacing: 0.03em;
 }
 
-textarea {
+.inputContainer input {
+  flex: 1;
+  margin-bottom: 2%;
+  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+}
+
+.inputContainer select {
+  flex: 1;
+  margin-bottom: 2%;
+  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+}
+
+.inputContainer textarea {
+  flex: 1;
   margin-left: 12%;
   margin-right: 12%;
   margin-bottom: 2%;
@@ -57,55 +67,31 @@ form {
   margin: 0 auto;
 }
 
-label,
-input,
-textarea,
-select {
-  display: inline-block;
-}
-
-label {
-  width: 30%;
-  text-align: right;
-}
-
-label+input+textarea+select {
-  width: 30%;
-  margin: 0 30% 0 4%;
-}
-
-input+input+textarea+select {
-  float: right;
-}
-
-.save {
-  box-shadow: 0px 0px 0px 2px #00000041;
-  background: linear-gradient(to bottom, #ffffff 5%, rgb(79, 149, 255) 100%);
-  border-radius: 2px;
-  border: 0.5px solid #ffffff;
+.btn-save {
+  border: none;
+  padding: 2px;
   display: inline-block;
   cursor: pointer;
-  color: rgb(255, 255, 255);
-  font-family: 'Exo';
+  color: #d2e885 !important;
+  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+  background: #a4d007;
+  background: -webkit-linear-gradient(top, #a4d007 5%, #536904 95%);
+  background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+  border-radius: 6px;
   font-size: 1.5em;
   letter-spacing: 0.03em;
   padding: 2px 8px;
   text-decoration: none;
-  text-shadow: 0px 1px 2px #283966;
+  margin-top: 20px;
 }
 
-.save:hover {
-  background: linear-gradient(to bottom, #10b3ff 5%, #ffffff 100%);
-  background-color: #476e9e;
+.btn-save:hover {
+  background: #a4d007;
+  background: -webkit-linear-gradient(top, #536904 5%, #a4d007 95%);
+  background: linear-gradient(to bottom, #536904 5%, #a4d007 95%);
 }
 
-.save:active {
+.btn-save:active {
   position: relative;
   top: 1px;
-}
-
-.check {
-  width: 210px;
-  border: 70px solid #ffffff;
-  box-shadow: 1px 1px 15px #00ffdd;
 }

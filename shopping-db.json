@@ -6,7 +6,7 @@
       "description": "Mehl glatt",
       "amount": 500,
       "unit": "gramm",
-      "done": true
+      "done": false
     },
     {
       "id": 2,
@@ -19,48 +19,31 @@
       "id": 3,
       "title": "Eier",
       "amount": 8,
-      "unit": "pcs",
       "done": false
     },
     {
       "title": "Wood",
-      "unit": "kg",
-      "description": "Buy Wood Quickly 🔥🔥",
+      "unit": "pcs",
+      "description": "Wood for crafting. 🔥",
       "done": false,
       "amount": 200,
       "id": 4
     },
     {
-      "title": "Meat",
-      "unit": "kg",
-      "description": "Meat for soup 🍝",
+      "title": "Berries",
+      "unit": "cups",
+      "description": "Berries for surviving in harsh situations 🍒",
       "done": true,
-      "amount": 10,
+      "amount": 60,
       "id": 5
     },
     {
-      "title": "Juken",
-      "unit": "grams",
-      "description": "Hadoooo",
-      "done": true,
-      "amount": 12,
-      "id": 6
-    },
-    {
-      "title": "emptxy",
-      "unit": "pcs",
-      "description": "deselected",
+      "title": "Bananas",
+      "unit": "kg",
+      "description": "to become the next pirate king 🦜🏴‍☠️",
       "done": false,
-      "amount": 12,
-      "id": 7
-    },
-    {
-      "title": "emptyx",
-      "unit": "pcs",
-      "description": "selected\n",
-      "done": true,
-      "amount": 12,
-      "id": 8
+      "amount": 20,
+      "id": 6
     }
   ]
 }
