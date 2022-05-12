@@ -1,0 +1,16 @@
+<p>shop-list works!</p>
+<!-- List takes care of emitted events from form, item and filter and sends it to API -->
+<app-shop-form (onItemAddEvent)="addItem($event)"></app-shop-form>
+
+<!-- <app-shopping-filter (onChooseEvent)="chooseItem($event)"></app-shopping-filter> -->
+
+<h1>Your List</h1>
+<br />
+<ng-container *ngFor="let t of shops">
+  <app-shop-item
+    [shopItem]="t"
+    (onItemDeleteEvent)="removeItem($event)"
+    (onItemUpdateEvent)="updateItem($event)"
+  >
+  </app-shop-item>
+</ng-container>

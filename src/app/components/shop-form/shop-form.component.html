@@ -1,0 +1,72 @@
+<p>shop-form works!</p>
+
+<div>
+  <!-- Form with all required input fields-->
+  <form>
+    <label for="inputTitle">Title </label>
+    <input
+      required
+      type="text"
+      name="inputTitle"
+      id="inputTitle"
+      [(ngModel)]="model.title"
+    /><br />
+
+    <!-- keyPressNumbers function => so user can only input decimals -->
+    <label for="inputAmount">Amount </label>
+    <input
+      required
+      type="text"
+      name="inputAmount"
+      id="inputAmount"
+      [(ngModel)]="model.amount"
+      (keypress)="keyPressNumbers($event)"
+    /><br />
+
+    <label for="inputUnit">Unit </label>
+    <select
+      required
+      type="text"
+      name="inputUnit"
+      id="inputUnit"
+      [(ngModel)]="model.unit"
+    >
+      <option value="pcs">pcs</option>
+      <option value="kg">kg</option>
+      <option value="grams">grams</option>
+      <option value="liters">liters</option>
+      <option value="cups">cups</option></select
+    ><br />
+
+    <label for="inputCheckBox">Done </label>
+    <input
+      class="check"
+      type="checkbox"
+      name="inputCheckBox"
+      value="true"
+      [(ngModel)]="model.done"
+    />
+    <label for="inputDescription">Description </label>
+    <textarea
+      name="inputDescription"
+      id="inputDescription"
+      cols="30"
+      rows="1"
+      [(ngModel)]="model.description"
+    ></textarea
+    ><br />
+
+    <ng-container *ngIf="model.id">
+      <label for="inputCompleted">Completed</label>
+      <input
+        type="checkbox"
+        name="inputCompleted"
+        id="inputDone"
+        [(ngModel)]="model.done"
+      />
+    </ng-container>
+    <br />
+    <button class="save" (click)="onSave()">Save</button>
+  </form>
+</div>
+<br />

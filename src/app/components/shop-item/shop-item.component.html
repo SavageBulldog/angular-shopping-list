@@ -1,0 +1,21 @@
+<p>shop-item works!</p>
+<div
+  class="d"
+  [ngClass]="{ green: this.shopItem.done, red: !this.shopItem.done }"
+>
+  <h3 class="id">{{ shopItem.id }}</h3>
+
+  <div class="flex-container">
+    <h2 class="title">{{ shopItem.title }}</h2>
+    <h3 class="amount">{{ shopItem.amount }}</h3>
+    <h3 class="unit">{{ shopItem.unit }}</h3>
+  </div>
+  <br />
+  <br />
+  <h4 class="desc">{{ shopItem.description }}</h4>
+
+  <p class="done" (click)="toggleCompleted()">
+    {{ shopItem.done ? "✔" : "⨉" }}
+  </p>
+  <button class="myButton" (click)="btnDelete()">Delete</button>
+</div>
