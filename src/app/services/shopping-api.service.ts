@@ -9,7 +9,7 @@ export class ShoppingApiService {
 
   constructor() {}
 
-  async getItem(): Promise<ShopItemClass[]> {
+  async getItems(): Promise<ShopItemClass[]> {
     const response = await fetch(this.apiUrl);
     const data = await response.json();
     return data;
@@ -19,7 +19,6 @@ export class ShoppingApiService {
     const data = await response.json();
     return data;
   }
-
   async createItem(shopitem: ShopItemClass): Promise<ShopItemClass> {
     const response = await fetch(`${this.apiUrl}`, {
       method: 'POST',
@@ -31,12 +30,10 @@ export class ShoppingApiService {
     const data = await response.json();
     return data;
   }
-
   async updateItem(shopitem: ShopItemClass): Promise<ShopItemClass | void> {
     if (!shopitem.id) {
-      throw 'No id specified for Shopping Item';
+      throw 'Shopping-Item [id] is missing!';
     }
-
     const response = await fetch(`${this.apiUrl}/${shopitem.id}`, {
       method: 'PUT',
       headers: {
@@ -47,10 +44,9 @@ export class ShoppingApiService {
     const data = await response.json();
     return data;
   }
-
   async deleteItem(id: number): Promise<void> {
     if (!id) {
-      throw 'No id specified for shopping item';
+      throw 'Shopping-Item [id] is missing!';
     }
     const response = await fetch(`${this.apiUrl}/${id}`, {
       method: 'DELETE',

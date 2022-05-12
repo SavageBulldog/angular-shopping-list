@@ -1,3 +1,66 @@
 {
-  "shoppinglistitems": []
+  "shoppinglistitems": [
+    {
+      "id": 1,
+      "title": "Mehl",
+      "description": "Mehl glatt",
+      "amount": 500,
+      "unit": "gramm",
+      "done": true
+    },
+    {
+      "id": 2,
+      "title": "Milch",
+      "amount": 0.5,
+      "unit": "liter",
+      "done": true
+    },
+    {
+      "id": 3,
+      "title": "Eier",
+      "amount": 8,
+      "unit": "pcs",
+      "done": false
+    },
+    {
+      "title": "Wood",
+      "unit": "kg",
+      "description": "Buy Wood Quickly 🔥🔥",
+      "done": false,
+      "amount": 200,
+      "id": 4
+    },
+    {
+      "title": "Meat",
+      "unit": "kg",
+      "description": "Meat for soup 🍝",
+      "done": true,
+      "amount": 10,
+      "id": 5
+    },
+    {
+      "title": "Juken",
+      "unit": "grams",
+      "description": "Hadoooo",
+      "done": true,
+      "amount": 12,
+      "id": 6
+    },
+    {
+      "title": "emptxy",
+      "unit": "pcs",
+      "description": "deselected",
+      "done": false,
+      "amount": 12,
+      "id": 7
+    },
+    {
+      "title": "emptyx",
+      "unit": "pcs",
+      "description": "selected\n",
+      "done": true,
+      "amount": 12,
+      "id": 8
+    }
+  ]
 }

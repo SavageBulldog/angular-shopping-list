@@ -14,13 +14,10 @@ export class ShopItemComponent implements OnInit {
 
   ngOnInit(): void {}
   btnDelete() {
-    // emitting event
     this.onItemDeleteEvent.emit(this.shopItem.id);
   }
-
   toggleCompleted() {
     this.shopItem.done = !this.shopItem.done;
-    // emitting event
     this.onItemUpdateEvent.emit(this.shopItem);
   }
 }

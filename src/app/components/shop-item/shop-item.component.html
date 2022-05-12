@@ -1,21 +1,18 @@
-<p>shop-item works!</p>
 <div
   class="d"
   [ngClass]="{ green: this.shopItem.done, red: !this.shopItem.done }"
 >
   <h3 class="id">{{ shopItem.id }}</h3>
-
   <div class="flex-container">
-    <h2 class="title">{{ shopItem.title }}</h2>
-    <h3 class="amount">{{ shopItem.amount }}</h3>
-    <h3 class="unit">{{ shopItem.unit }}</h3>
+    <h3 class="title">{{ shopItem.title }}</h3>
+    <h4 class="amount">{{ shopItem.amount }}</h4>
+    <h4 class="unit">{{ shopItem.unit }}</h4>
   </div>
   <br />
   <br />
   <h4 class="desc">{{ shopItem.description }}</h4>
-
-  <p class="done" (click)="toggleCompleted()">
+  <p class="filter-finished" (click)="toggleCompleted()">
     {{ shopItem.done ? "✔" : "⨉" }}
   </p>
-  <button class="myButton" (click)="btnDelete()">Delete</button>
+  <button class="btn-delete" (click)="btnDelete()">Delete</button>
 </div>

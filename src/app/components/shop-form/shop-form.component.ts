@@ -8,28 +8,19 @@ import ShopItemClass from 'src/app/models/shop_class';
 })
 export class ShopFormComponent implements OnInit {
   @Output() onItemAddEvent = new EventEmitter<ShopItemClass>();
-  model = new ShopItemClass('');
+  model = new ShopItemClass('', 'pcs');
 
   constructor() {}
 
   ngOnInit(): void {}
   onSave() {
+    // assert if title has been set
     if (this.model.title === '') {
-      alert('Please provide a title for the item on your list');
+      alert('👆 please enter a title for your item !!!');
       return;
     }
     this.onItemAddEvent.emit(this.model);
-    this.model = new ShopItemClass('');
-  }
-
-  title = 'angular-key-press-example';
-  // Only Numbers with Decimals are allowed
-  keyPressNumbers(event: any) {
-    let charCode = event.which ? event.which : event.keyCode;
-    if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57)) {
-      event.preventDefault();
-      return false;
-    }
-    return true;
+    // unset input field values
+    this.model = new ShopItemClass('', 'pcs');
   }
 }

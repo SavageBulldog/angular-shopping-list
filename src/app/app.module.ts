@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// add formsmodule import to be able to use [(NGMODEL)] in shop-form.component
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,14 +16,10 @@ import { ShopListComponent } from './components/shop-list/shop-list.component';
     HeaderComponent,
     ShopFormComponent,
     ShopItemComponent,
-    ShopListComponent
+    ShopListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -4,10 +4,11 @@ class ShopItemClass {
   title: string;
   description?: string;
   amount?: number;
-  unit?: string;
+  unit: string;
   done: boolean;
-  constructor(title: string, description?: string) {
+  constructor(title: string, unit: string, description?: string) {
     this.title = title;
+    this.unit = unit;
     this.description = description;
     this.done = false;
   }

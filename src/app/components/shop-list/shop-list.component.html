@@ -1,14 +1,24 @@
-<p>shop-list works!</p>
-<!-- List takes care of emitted events from form, item and filter and sends it to API -->
+<!-- sends events from form and item to api -->
 <app-shop-form (onItemAddEvent)="addItem($event)"></app-shop-form>
-
-<!-- <app-shopping-filter (onChooseEvent)="chooseItem($event)"></app-shopping-filter> -->
-
-<h1>Your List</h1>
+<div>
+  <button class="filter-all" (click)="onFilterDone('all')">All</button>
+  <button class="filter-finished" (click)="onFilterDone('finished')">
+    Finished
+  </button>
+  <button class="filter-unfinished" (click)="onFilterDone('unfinished')">
+    Unfinished
+  </button>
+</div>
+<div>
+  <button class="filter-all" (click)="sortItemList('id')">ID</button>
+  <button class="filter-finished" (click)="sortItemList('title')">Title</button>
+  <button class="filter-unfinished" (click)="sortItemList('unit')">Unit</button>
+</div>
+<h2>Items 👇</h2>
 <br />
-<ng-container *ngFor="let t of shops">
+<ng-container *ngFor="let item of shopItems">
   <app-shop-item
-    [shopItem]="t"
+    [shopItem]="item"
     (onItemDeleteEvent)="removeItem($event)"
     (onItemUpdateEvent)="updateItem($event)"
   >
