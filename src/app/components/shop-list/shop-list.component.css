@@ -7,21 +7,26 @@ h2 {
   margin: 0;
   letter-spacing: 0.5px;
 }
+.btn-desc {
+  color: #969696;
+  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+  line-height: 10px;
+  margin-right: 1%;
+}
 .btn-row {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
 }
 .button-0 {
   border: none;
-  border-radius: 6px;
+  border-radius: 7px;
   padding: 10px;
   margin: 2px;
   display: inline-block;
   cursor: pointer;
   color: #d2e885 !important;
   font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
-
   background: #a4d007;
   background: -webkit-linear-gradient(top, #a4d007 5%, #536904 95%);
   background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);

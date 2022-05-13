@@ -1,15 +1,15 @@
 <!-- sends events from form and item to api -->
 <app-shop-form (onItemAddEvent)="addItem($event)"></app-shop-form>
 <div class="btn-row">
+  <p class="btn-desc">Filter:</p>
   <button class="button-0" (click)="onFilterDone('all')">All</button>
-  <button class="button-0" (click)="onFilterDone('finished')">
-    Finished
-  </button>
+  <button class="button-0" (click)="onFilterDone('finished')">Finished</button>
   <button class="button-0" (click)="onFilterDone('unfinished')">
     Unfinished
   </button>
 </div>
 <div class="btn-row">
+  <p class="btn-desc">Sort:</p>
   <button class="button-0" (click)="sortItemList('id')">ID</button>
   <button class="button-0" (click)="sortItemList('title')">Title</button>
   <button class="button-0" (click)="sortItemList('unit')">Unit</button>

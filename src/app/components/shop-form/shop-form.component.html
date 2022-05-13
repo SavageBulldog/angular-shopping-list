@@ -1,5 +1,5 @@
-<h2>Add Item</h2>
 <div class="formContainer">
+  <h2>Add New Item</h2>
   <!-- input fields 🥶👉🥛-->
   <form>
     <div class="inputContainer">
@@ -12,7 +12,6 @@
         [(ngModel)]="model.title"
       />
     </div>
-
     <div class="inputContainer">
       <label for="inputAmount">Amount </label>
       <input
@@ -24,7 +23,6 @@
         [(ngModel)]="model.amount"
       />
     </div>
-
     <div class="inputContainer">
       <label for="inputUnit">Unit </label>
       <select
@@ -41,7 +39,6 @@
         <option value="cups">cups</option>
       </select>
     </div>
-
     <div class="inputContainer">
       <label for="inputCheckBox">Finished </label>
       <input
@@ -52,7 +49,6 @@
         [(ngModel)]="model.done"
       />
     </div>
-
     <div class="inputContainer">
       <label for="inputDescription">Description </label>
       <textarea
@@ -64,8 +60,6 @@
       >
       </textarea>
     </div>
-
     <button class="btn-save" (click)="onSave()">Save</button>
   </form>
 </div>
-<br />
