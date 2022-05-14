@@ -9,9 +9,11 @@ h2 {
 }
 .btn-desc {
   color: #969696;
+  font-size: 1.5em;
+  text-align: center;
   font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
-  line-height: 10px;
-  margin-right: 1%;
+  margin: 5px;
+  letter-spacing: 0.5px;
 }
 .btn-row {
   margin-bottom: 5px;

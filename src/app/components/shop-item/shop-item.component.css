@@ -1,29 +1,7 @@
-h3 {
-  text-align: center;
-  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  margin: 0px;
-  letter-spacing: 0.03em;
-}
-
-h4 {
-  text-align: center;
-  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  margin: 0;
-  letter-spacing: 0.03em;
-}
-
-div {
-  text-align: center;
-  padding-bottom: 1%;
-  padding-top: 1%;
+.d {
   margin-left: 30%;
   margin-right: 30%;
   margin-bottom: 2%;
-}
-
-.d {
   width: 40%;
   font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
   letter-spacing: 0.5px;
@@ -35,9 +13,12 @@ div {
   padding-top: 1%;
   box-shadow: 3px 7px 20px rgb(51, 51, 51);
 }
-
 .id {
   text-align: center;
+  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  margin: 0px;
+  letter-spacing: 0.03em;
   color: #c5ced8;
   border: 2px solid #a4d007;
   border-radius: 8px;
@@ -45,10 +26,11 @@ div {
   padding-right: 2%;
   display: inline;
 }
-
 .desc {
+  text-align: center;
+  margin: 0;
   font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
-  color: #a6acb4;
+  color: #b0b4b9;
   font-size: 1em;
   margin-left: 15px;
   margin-right: 15px;
@@ -71,41 +53,47 @@ div {
   padding: 2px 8px;
   text-decoration: none;
 }
-
 .btn-delete:hover {
   background: #a4d007;
   background: -webkit-linear-gradient(top, #536904 5%, #a4d007 95%);
   background: linear-gradient(to bottom, #536904 5%, #a4d007 95%);
 }
-
 .btn-delete:active {
   position: relative;
   top: 1px;
 }
 
 .green {
-  background-color: rgba(15, 250, 15, 25%);
+  border-style: dashed;
+  border-color: rgba(15, 250, 15, 45%);
+  background: radial-gradient(
+    farthest-corner at 40px 40px,
+    #1b2838 10%,
+    #2a475e 90%
+  );
   transition: background-color 0.3s;
 }
-
 .green:hover {
-  background-color: rgba(15, 250, 15, 40%);
+  background: rgba(15, 250, 15, 20%);
 }
-
 .red {
-  background-color: rgba(250, 0, 0, 35%);
+  border-style: dashed;
+  border-color: rgba(250, 0, 0, 45%);
+  background: radial-gradient(
+    farthest-corner at 40px 40px,
+    #1b2838 10%,
+    #2a475e 90%
+  );
   transition: background-color 0.3s;
 }
-
 .red:hover {
-  background-color: rgba(250, 0, 0, 50%);
+  background: rgba(250, 0, 0, 20%);
 }
 
 .flex-container {
   display: flex;
   justify-content: center;
 }
-
 .flex-container > .title {
   width: 50%;
   margin-top: 5px;
@@ -114,7 +102,6 @@ div {
   line-height: 40px;
   color: #c5ced8;
 }
-
 .flex-container > .unit,
 .amount {
   width: 50%;
@@ -145,4 +132,19 @@ div {
   background: #a4d007;
   background: -webkit-linear-gradient(top, #536904 5%, #a4d007 95%);
   background: linear-gradient(to bottom, #536904 5%, #a4d007 95%);
+}
+
+.btncolfin {
+  color: rgba(65, 180, 65, 0.8);
+  transition: background-color 0.3s;
+}
+.btncolfin:hover {
+  color: rgba(26, 220, 26, 0.7);
+}
+.btncolunfin {
+  color: rgba(180, 65, 65, 0.65);
+  transition: background-color 0.3s;
+}
+.btncolunfin:hover {
+  color: rgba(220, 28, 28, 0.8);
 }

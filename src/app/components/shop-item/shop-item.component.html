@@ -9,7 +9,14 @@
     <h4 class="unit">{{ shopItem.unit }}</h4>
   </div>
   <h4 class="desc">{{ shopItem.description }}</h4>
-  <p class="toggle-finished" (click)="toggleCompleted()">
+  <p
+    class="toggle-finished"
+    [ngClass]="{
+      btncolfin: this.shopItem.done,
+      btncolunfin: !this.shopItem.done
+    }"
+    (click)="toggleCompleted()"
+  >
     {{ shopItem.done ? "✔" : "⨉" }}
   </p>
   <button class="btn-delete" (click)="btnDelete()">Delete 🗑</button>
