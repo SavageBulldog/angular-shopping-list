@@ -1,36 +1,36 @@
-# Angular-Shopping-List
+# Angular-shopping-list
 
-_Shopping List created in Angular-Typescript_
+_shopping-list created in Angular Typescript_ (◔‿◔)👉🥛
 
-project ir running on <http://localhost:4200/>
+---
 
-to start the project run `ng serve` in terminal/cmd
+> to start the project run `ng serve` in terminal/cmd
 
 ```cmd
 cd angular-shopping-list
 ng serve
 ```
 
-to start the json server necessary for loading the db.json
+- project is running on _[localhost:4200](http://localhost:4200/)_
 
-use either METHOD #1
+---
+
+> to start the json server necessary for loading the database file => `db.json`  
+> run either option #1 or option #2
 
 ```cmd
 json-server --watch shopping-db.json --port 3999
 ```
 
-or use METHOD #2
-
 ```cmd
 npm run json-server
 ```
 
-- json-server is running on <http://localhost:3999>
-- resources are found at <http://localhost:3999/shoppinglistitems>
+- json-server is running on _[localhost:3999](http://localhost:3999/)_
 
-additional information/guides can be looked up at:
+---
 
-- <https://github.com/typicode/json-server>
-- <https://angular.io/guide/setup-local>
-
-👉🥛
+> additional information/guides 👇(◠‿◠)
+>
+> - [Json-Server github](https://github.com/typicode/json-server)
+> - [Angular.io guide](https://angular.io/guide/setup-local)
