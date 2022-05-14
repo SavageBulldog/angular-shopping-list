@@ -2,7 +2,9 @@
 
 _Shopping List created in Angular-Typescript_
 
-to start the project on <http://localhost:4200/>
+project ir running on <http://localhost:4200/>
+
+to start the project run `ng serve` in terminal/cmd
 
 ```cmd
 cd angular-shopping-list
